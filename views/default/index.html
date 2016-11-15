@@ -1,0 +1,11 @@
+{{extend 'layout.html'}}
+{{=form}}
+<script>
+$(document).ready(function(){
+$("#case_file_auth_user_id option").val("{{=auth.user_id}}")
+$("#case_file_auth_user_id__row").hide()
+$("#case_file_history_case_file_id__row").hide()
+$("#case_file_child_case_file_id__row").hide()
+})
+
+</script>
